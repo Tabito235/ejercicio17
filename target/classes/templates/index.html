@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Me gusta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Me gusta</h1>
+
+  <div class="galeria">
+    <div class="imagen">
+  <img src="Fenrir.jpeg" width="300" height="200">
+  <p id="like1" th:text="${likes.likeImagen1}">0</p>
+  <button onclick="like(1)">Me gusta</button>
+</div>
+<div class="imagen">
+  <img src="turtlee.jpg" width="300" height="200">
+  <p id="like2" th:text="${likes.likeImagen2}">0</p>
+  <button onclick="like(2)">Me gusta</button>
+</div>
+<div class="imagen">
+  <img src="colibrí.jpg" width="300" height="200">
+  <p id="like3" th:text="${likes.likeImagen3}">0</p>
+  <button onclick="like(3)">Me gusta</button>
+</div>
+
+  </div>
+
+   <script src="funcion.js"></script>
+
+</body>
+</html>
